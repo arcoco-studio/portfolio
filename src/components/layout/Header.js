@@ -18,7 +18,7 @@ const Header = () => {
         </div>
       
         <div className={styles.navMenu}>
-          <Link to="/portfolio" className={`${styles.navLink} ${location.pathname === '/portfolio' ? styles.active : ''}`}>
+          <Link to="/home" className={`${styles.navLink} ${location.pathname === '/home' ? styles.active : ''}`}>
             HOME
           </Link>
           {/* <Link to="/project" className={`${styles.navLink} ${location.pathname === '/project' ? styles.active : ''}`}> */}
