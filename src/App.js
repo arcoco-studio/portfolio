@@ -18,8 +18,8 @@ function App() {
         <ScrollToTop />
         <div className="main-container">
           <Routes>
-            <Route path="/" element={<Navigate replace to="/portfolio" />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/" element={<Navigate replace to="/home" />} />
+            <Route path="/home" element={<Portfolio />} />
             <Route path="/project" element={<Project />} />
             <Route path="/project/visual-select-query-data" element={<VisualSelectQueryData />} />
           </Routes>
