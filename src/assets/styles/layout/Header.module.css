@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #333; /* 헤더 배경색 */
+  padding: 5px 20px; /* 상하 패딩 포함 */
+  max-height: 50px; /* 헤더 높이 제한 */
+  box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
+}
+
+
+.navLogo img {
+  width: 35px; /* 로고의 너비를 30px로 조정 */
+  height: auto; /* 비율 유지 */
+  display: block; /* 로고가 정확히 중앙에 배치되도록 설정 */
+  margin: auto; /* 상하 중앙 정렬 */
+}
+
+.navMenu {
+  margin-left: auto; /* 메뉴는 오른쪽 정렬 */
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px; /* 메뉴 간격 조정 */
+  font-size: 14px; /* 메뉴 텍스트 크기 조정 */
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ff5722; /* 호버 시 강조 색상 */
+}
+
+.navLink.active {
+  border-bottom: 2px solid #ff5722; /* 활성화된 메뉴 강조 */
+}

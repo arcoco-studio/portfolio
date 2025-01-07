@@ -1,0 +1,300 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #444, #555);
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.site-logo {
+  display: block;
+  margin: 0 auto 20px; /* 로고 아래 여백 추가 */
+  width: 80px; /* 적절한 크기 */
+  height: auto; /* 비율 유지 */
+  opacity: 0.9; /* 살짝 투명도 */
+  transition: transform 0.3s ease;
+}
+
+
+.about-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.highlight {
+  color: #f39c12; /* Highlighted color for "Code" */
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 아이콘 간 간격 조정 */
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 60px; /* 아이콘 크기 확대 */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* 원형 배경 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 호버 효과 */
+}
+
+.social-icon img {
+  width: 50%; /* 이미지 크기를 배경 대비 적절하게 축소 */
+}
+
+
+.social-icon.github-icon {
+  background-color: #FFF; /* 밝은 배경으로 대비 */
+  border: 1px solid #000; /* 테두리 추가 */
+}
+
+/* Hover 효과 */
+.social-icon:hover {
+  transform: scale(1.1); /* 살짝 확대 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+/* Skills Section */
+.skills-section {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff5722;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-category {
+  flex : 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.skills-category h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color : #1e3a8a;
+}
+
+.skills-category.frontend {
+  padding : 40px;
+  border-radius: 20px;
+  background-color: #e3f2fd;
+}
+
+.skills-category.backend {
+  padding : 40px;
+  border-radius: 20px;
+  /* background-color: #eef6f9; */
+  background-color: #e8f5e9;
+  
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 80px;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+/* Skill Tags Colors */
+.frontend .skill-item{
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.backend .skill-item{
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+.projects-section {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-content {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.project-card-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.project-card-content p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.project-card-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  background: #ff5722;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.3s ease;
+}
+
+.project-card-action:hover {
+  background: #e64a19;
+}
+
+
+.explore-more-projects {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.explore-more-projects:hover {
+  background: #031a5a;
+  transform: scale(1.05); /* 버튼 강조 효과 */
+}
+
+
+
+
