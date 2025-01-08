@@ -21,7 +21,6 @@ const Header = () => {
           <Link to="/home" className={`${styles.navLink} ${location.pathname === '/home' ? styles.active : ''}`}>
             HOME
           </Link>
-          {/* <Link to="/project" className={`${styles.navLink} ${location.pathname === '/project' ? styles.active : ''}`}> */}
           <Link to="/project" className={`${styles.navLink} ${location.pathname.startsWith('/project') ? styles.active : ''}`}>
             Project
           </Link>

@@ -426,3 +426,22 @@ input[type="text"]:focus, input[type="number"]:focus, select:focus {
   border-radius: 5px;
   padding: 15px;
 }
+
+
+
+@media (max-width: 768px) {
+  select[class^='select']{
+    font-size : 14px;
+  }
+
+  .column-selector-container {
+    font-size : 14px;
+    max-width: 200px;
+  }
+
+  .icon-button {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+  }
+}

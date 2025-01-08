@@ -143,17 +143,13 @@ body {
 }
 
 .skills-category.frontend {
-  padding : 40px;
   border-radius: 20px;
   background-color: #e3f2fd;
 }
 
 .skills-category.backend {
-  padding : 40px;
   border-radius: 20px;
-  /* background-color: #eef6f9; */
   background-color: #e8f5e9;
-  
 }
 
 .skills-list {

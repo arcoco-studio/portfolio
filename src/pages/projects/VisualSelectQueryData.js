@@ -1197,7 +1197,7 @@ const VisualSelectQueryData = () => {
             {tableElements}
           </div>
           <div className="table-relation-wrap">
-            <svg width={1800} height={340} ref={svgRef}>
+            <svg width={1800} height={380} ref={svgRef}>
             </svg>
           </div>
         </div>
