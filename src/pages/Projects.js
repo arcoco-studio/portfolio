@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import 'assets/styles/pages/Project.css';
+import 'assets/styles/pages/Projects.css';
 
 
-import projectData from 'components/data/ProjectData';
+import projectData from 'components/data/ProjectsData';
 
 
-function Project() {
+function Projects() {
   return (
     <div className="project-page">
       <header className="project-header">
@@ -43,4 +43,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Projects;

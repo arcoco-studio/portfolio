@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Header from 'components/layout/Header';
 import Footer from 'components/layout/Footer';
 import Portfolio from './pages/Portfolio';
-import Project from './pages/Project';
+import PostList from './pages/PostList';
+import PostDetail from 'pages/PostDetail';
+import Projects from './pages/Projects';
 import VisualSelectQueryData from './pages/projects/VisualSelectQueryData';
 
 import ScrollToTop from "components/common/ScrollToTop";
@@ -12,7 +14,7 @@ import 'assets/styles/App.css';
 
 function App() {
   return (
-    <BrowserRouter basename='portfolio'>
+    <BrowserRouter basename='portfolio' future={{v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="root-container">
         <Header />
         <ScrollToTop />
@@ -20,8 +22,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Portfolio />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/project/visual-select-query-data" element={<VisualSelectQueryData />} />
+            <Route path="/posts" element={<PostList />} />
+            <Route path="/posts/:postId" element={<PostDetail />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/visual-select-query-data" element={<VisualSelectQueryData />} />
           </Routes>
         </div>
         <Footer />

@@ -121,13 +121,13 @@ function Portfolio() {
             <h3>Visual Select Query Data</h3>
             <p>It's practicing SELECT SQL for beginner developers.</p>
           </div>
-          <Link to="/project/visual-select-query-data" className="project-card-action">
+          <Link to="/projects/visual-select-query-data" className="project-card-action">
             View Project
           </Link>
         </div>
         
         <div className="more-projects">
-          <Link to="/project" className="explore-more-projects">
+          <Link to="/projects" className="explore-more-projects">
             Explore more projects
           </Link>
         </div>

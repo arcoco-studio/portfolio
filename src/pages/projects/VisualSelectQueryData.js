@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 
 import 'assets/styles/pages/projects/VisualSelectQueryData.css'
 
-import projectData from 'components/data/ProjectData';
+import projectData from 'components/data/ProjectsData';
 
 ///-- Sample Database START -------------------------------------------------------------
 const database ={

@@ -7,7 +7,7 @@ const ProjectData = [
       description: "It's practicing about SELECT SQL JOIN.",
       tags: ["Educational", "SQL", "JOIN"],
       thumbnail: vsqdThumbnail,
-      pageLink: "/project/visual-select-query-data",
+      pageLink: "/projects/visual-select-query-data",
     },
 ];
 
