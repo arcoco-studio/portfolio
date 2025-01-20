@@ -13,10 +13,6 @@ const PostList = () => {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = postData.slice(indexOfFirstPost, indexOfLastPost);
 
-
-  console.log(currentPage, postsPerPage, indexOfFirstPost, currentPosts);
-
-
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const getPostDate = (id) => {

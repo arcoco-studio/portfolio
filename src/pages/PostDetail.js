@@ -21,7 +21,6 @@ const PostDetail = () => {
       fetch(publicPostPath)
         .then((response) => response.text())
         .then((data) => {
-          console.log('data',data);
           setPostContent(data);
         })
         .catch((error) => console.error("Error loading post:", error));
