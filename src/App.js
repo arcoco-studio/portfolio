@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Header from 'components/layout/Header';
 import Footer from 'components/layout/Footer';
+import NotFound from 'components/layout/NotFound';
 import Portfolio from './pages/Portfolio';
 import PostList from './pages/PostList';
 import PostDetail from 'pages/PostDetail';
@@ -26,6 +27,7 @@ function App() {
             <Route path="/posts/:postId" element={<PostDetail />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/visual-select-query-data" element={<VisualSelectQueryData />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />

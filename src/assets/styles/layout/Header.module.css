@@ -35,3 +35,27 @@
 .navLink.active {
   border-bottom: 2px solid #ff5722; /* 활성화된 메뉴 강조 */
 }
+
+@media (max-width: 768px) {
+  .navbar{
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+  }
+
+
+  .navbar div:first-child{
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    margin: 2px;
+  }
+
+  .navLink{
+    font-size : 18px;
+  }
+}

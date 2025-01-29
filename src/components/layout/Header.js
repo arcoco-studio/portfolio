@@ -18,7 +18,7 @@ const Header = () => {
         </div>
       
         <div className={styles.navMenu}>
-          <Link to="/home" className={`${styles.navLink} ${location.pathname === '/home' ? styles.active : ''}`}>HOME</Link>
+          <Link to="/home" className={`${styles.navLink} ${location.pathname === '/home' ? styles.active : ''}`}>Home</Link>
           <Link to="/posts" className={`${styles.navLink} ${location.pathname.startsWith('/posts') ? styles.active : ''}`}>Posts</Link>
           <Link to="/projects" className={`${styles.navLink} ${location.pathname.startsWith('/projects') ? styles.active : ''}`}>Projects</Link>
         </div>
