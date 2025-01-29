@@ -11,6 +11,7 @@ import githubIcon from 'assets/images/github-icon.png';
 import instagramIcon from 'assets/images/instagram-icon.png';
 
 import SkillLogoData from 'components/data/SkillLogoData';
+import PostData from 'components/data/PostsData';
 
 import vsqdThumbnail from 'assets/images/vsqd-thumbnail.png';
 
@@ -33,9 +34,9 @@ function Portfolio() {
             <a href="mailto:acc.work.freelancer@example.com" aria-label="Email">
               <img src={emailIcon} alt="Email" className="social-icon email-icon" />
             </a>
-            <a href="https://www.linkedin.com/in/--acc-software/" aria-label="LinkedIn">
+            {/* <a href="https://www.linkedin.com/in/--acc-software/" aria-label="LinkedIn">
               <img src={linkedinIcon} alt="LinkedIn" className="social-icon linkedin-icon" />
-            </a>
+            </a> */}
             {/* <a href="https://github.com" aria-label="GitHub">
               <img src={githubIcon} alt="GitHub" className="social-icon github-icon" />
             </a> */}
@@ -111,9 +112,21 @@ function Portfolio() {
         </div>
       </section>
 
-      {/* Side Projects Section */}
+      <section class="posts-section">
+        <h2 class="section-header">Posts</h2>
+        <div class="posts-grid">
+          {PostData.filter(_ => _.isMain === 'Y').map((post,postIndex) => (
+            <article className="post-card">
+              <h3 className="post-title">{post.title}</h3>
+              <Link to={`/posts/${post.id}`} className='read-more'>Read More →</Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Projects Section */}
       <section className="projects-section">
-        <h2 className="section-header">Side Projects</h2>
+        <h2 className="section-header">Projects</h2>
         
         <div className="project-card">
           <img src={vsqdThumbnail} alt="Visual Select Query Data" />
