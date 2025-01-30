@@ -8,7 +8,16 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <footer className={styles.footer}>
-      © 2025 <img src={siteLogo} alt="site logo"/>. All Rights Reserved.
+        <div className={styles.footerContent}>
+          <span className={styles.footerText}>© 2025 <img src={siteLogo} alt="site logo" className={styles.footerSiteLogo}/>. All Rights Reserved.</span>
+          <a href="https://hits.sh/arcoco-studio.github.io/portfolio/home/">
+            <img
+              alt="Hits"
+              src="https://hits.sh/arcoco-studio.github.io/portfolio/home.svg?style=for-the-badge&color=ff5722"
+              className={styles.hitsCounter}
+            />
+          </a>
+        </div>
       </footer>
     </div>
   );
